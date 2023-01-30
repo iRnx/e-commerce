@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    {% include 'partials/head.html' %}
+
+    <title>{% block 'title' %}{% endblock %}</title>
+</head>
+
+<body>
+    
+    {% include 'partials/nav.html' %}
+
+    <main class="container mt-4 mb-4">
+        {% block 'content' %}
+            
+        {% endblock %}
+    </main>
+
+    {% include 'partials/footer.html' %}
+
+    
+</body>
+
+</html>
