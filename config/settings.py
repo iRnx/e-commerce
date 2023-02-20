@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'produto',
     'pedido',
     'perfil',
-    'loja',
 
     'stdimage',
 

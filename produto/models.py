@@ -5,6 +5,7 @@ from django.utils.safestring import mark_safe
 from utils import utils
 
 
+
 class Produto(models.Model):
     nome = models.CharField(max_length=255)
     descricao_curta = models.TextField(max_length=255)
@@ -18,6 +19,7 @@ class Produto(models.Model):
     def __str__(self) -> str:
         return self.nome
 
+    
 
     def get_preco_formatado(self):
         return utils.formata_preco(self.preco_marketing)
